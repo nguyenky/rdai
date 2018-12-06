@@ -1,0 +1,18 @@
+{
+  "name": "rdaindex",
+  "description": "rdaindex",
+  "main": "rdaindex",
+  "authors": [
+    "nguyenky <lenguyenky1801@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "rdai"
+  ],
+  "homepage": "",
+  "dependencies": {
+    "angular": "1.7.5",
+    "angular-ui-router": "^1.0.20",
+    "oclazyload": "^1.1.0"
+  }
+}
