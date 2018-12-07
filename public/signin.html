@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>:: Real Digital Asset Index - Register ::</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/helpers.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.css">
+  </head>
+
+  <body ng-app="app">
+    <div class="se-pre-con"></div>
+    <div class="page-content">
+      <div class="top-bar fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="/"><img src="images/RDAi_logo_small.png" class="logo"></a>
+          <a class="btn btn-warning btn-sm pull-right sml account animated fadeInRight animated-delay3" href="signin.html">SIGN IN</a>
+          <a class="btn bg-dark-blue btn-sm pull-right account animated fadeInRight animated-delay" href="register.html">REGISTER</a>
+          <div id="top-rated-asset" class="pull-right animated fadeInRight animated-delay"><strong>RDA #1:</strong> <span id="topRatedAsset"></span></div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue">
+        <div class="container">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link animated fadeInDown" href="/what-is-rda.html">What is RDA Index</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link animated fadeInDown animated-delay2" href="/about-us.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link animated fadeInDown  animated-delay3" href="/faqs.html">FAQ's</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link animated fadeInDown  animated-delay4" href="/rda-token.html">RDA Token</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link animated fadeInDown  animated-delay5" href="/contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="mpt">
+        <div class="container nmt border-bottom lpb">
+          <div class="row">
+            <div class="col-md-12"><h4>Signin Page</h4></div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="npt border-bottom">
+        <div class="container mmt">
+          <div class="row">
+
+            <div class="col-md-6" ng-controller="rdaiAccountListController">
+
+                <div ng-repeat="account in accounts">
+                  <a href="" ng-click="signIn(account)">
+                    <span>{{account.address}}</span> | <span>{{account.name}}</span>
+                  </a>
+                </div>
+            </div>
+
+
+            <div class="offset-md-1 col-md-4">
+              <div id="why-rda">
+
+                <div id="form-output-global"></div>
+
+                <form id="signinForm">
+                  <div class="col-sm-6 col-md-12">
+                    <input id="registerform-email" type="email" name="email" class="form-control mmb animated fade-in animate-hide animated-delay1" placeholder="Email" required>
+                  </div>
+
+                  <div class="col-sm-6 col-md-12">
+                    <input id="register-form-password" type="password" name="password" class="form-control mmb animated fade-in animate-hide animated-delay2" placeholder="Password" required>
+                  </div>
+
+                  <div class="col-sm-6 col-md-4">
+                    <input type="submit" class="btn btn-newsletter-submit animated fade-in animate-hide animated-delay3" name="submit" value="SIGN IN">
+                  </div>
+
+                  <div class="col-sm-6 col-md-12 animated fade-in animate-hide animated-delay4 mmt">
+                    <a class="" href="">Forgotten Password?</a>
+                  </div>
+                </form>
+
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+
+
+    </div>
+    <footer class="xlpt">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <h4 class="footer-menu-header">RDA INDEX</h4>
+            <p>RDA Index does not accept any form of compensation from creators, issuers or sponsors of cryptocurrencies. Nor are the RDA Index rankings intended to endorse or promote an investment in any specific cryptocurrency. Cryptocurrencies carry a high degree of risk. The UK Financial Conduct Authority and other regulators have expressed concerns with the volatility of the market and the actions of sponsors of specific cryptocurrencies. So be sure to review their official consumer alerts such as the public statement on cryptocurrencies by the Financial Conduct Authority. </p>
+            <p>
+              <ul class="list-inline mmt nmb">
+                <li> <a class="smedia animated fade-in animate-hide animated-delay1" target="new" href="https://www.linkedin.com/company/rda-index"><i class="fab fa-linkedin"></i></a> </li>
+                <li> <a class="smedia animated fade-in animate-hide animated-delay2" target="new" href="https://twitter.com/rdaindex"><i class="fab fa-twitter"></i></a> </li>
+                <li> <a class="smedia animated fade-in animate-hide animated-delay3" target="new" href="https://t.me/rdaindex"><i class="fab fa-telegram"></i></a> </li>
+                <li> <a class="smedia  animated fade-in animate-hide animated-delay4" target="new" href="https://www.youtube.com/channel/UC1hBmo82FAHv1vGDwRUnfBw?view_as=subscriber"><i class="fab fa-youtube"></i></a> </li>
+              </ul>
+            </p>
+          </div>
+
+          <div class="col-md-2 offset-md-1">
+            <ul class="footer-menu">
+              <li class="footer-menu-header">COMPANY</li>
+              <li> <a href=""> RDA Index</a></li>
+              <li> <a href=""> About Us</a></li>
+              <li> <a href=""> FAQ’s</a></li>
+              <li> <a href=""> News & Events</a></li>
+              <li> <a href=""> Terms & Conditions</a></li>
+              <li> <a href=""> Privacy & Cookies</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <ul class="footer-menu">
+              <li class="footer-menu-header">DIGITAL ASSETS</li>
+              <li> <a href=""> RDA Index</a></li>
+              <li> <a href=""> About Us</a></li>
+              <li> <a href=""> FAQ’s</a></li>
+              <li> <a href=""> News & Events</a></li>
+              <li> <a href=""> Terms & Conditions</a></li>
+              <li> <a href=""> Privacy & Cookies</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <ul class="footer-menu">
+              <li class="footer-menu-header">RESOURCES</li>
+              <li> <a href=""> RDA Index</a></li>
+              <li> <a href=""> About Us</a></li>
+              <li> <a href=""> FAQ’s</a></li>
+              <li> <a href=""> News & Events</a></li>
+              <li> <a href=""> Terms & Conditions</a></li>
+              <li> <a href=""> Privacy & Cookies</a></li>
+            </ul>
+          </div>
+          <div class="col-md-10">
+                <p class="copyright">
+                  © 2018 all rights reserved. RDA Index is owned and maintained by Xtant Real. A company registered in England and Wales 11291734.
+                </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animate.js"></script>
+    <script src="js/rda.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+
+
+          // LOGIN
+          $('#signinForm').submit(function (e) {
+            e.preventDefault();
+
+            var email = $('input[name=email]').val();
+            var password = $('input[name=password]').val();
+            // var telephoneNumber = $('input[name=telephoneNumber]').val();
+            // var companyName = $('input[name=companyName]').val();
+            // var newsLetterSubscription = $('input[name=newsLetterSubscription]').val();
+            // var wavePlatformAddress = $('input[name=wavePlatformAddress]').val();
+
+            var userData = { "email": email, "password": password};
+
+            $('#form-output-global').html('<p><span class="icon text-middle fa fa-circle-o-notch fa-spin icon-xs"></span><span>Sending</span></p>');
+            $('#form-output-global').addClass("active");
+            console.log(JSON.stringify(userData));
+            $.ajax({
+              type: 'POST',
+              url: 'https://service.rdaindex.com/user-registration',
+              crossDomain: true,
+              data: JSON.stringify(userData),
+              dataType: 'json',
+              success: function (responseData, textStatus, jqXHR) {
+                console.log("in success");
+                var status = responseData.status;
+                console.log(JSON.stringify(responseData));
+                if (status == 'Failed') {
+                  $('#form-output-global').html('<p class="snackbars-left"><span class="icon icon-xs fa-warning text-middle"></span><span>Message: ' + responseData.message + '</span></p>');
+                  $('#form-output-global').addClass("error");
+                  $('#form-output-global').addClass("active");
+                }
+                else if (status == "RegistrationSuccessful") {
+                  $('#form-output-global').html('<p><span class="icon text-middle fa-check icon-xs"></span><span>Registration Successful</span></p>');
+                  $('#form-output-global').addClass("success");
+                  $('#form-output-global').addClass("active");
+                  $('#registerform')[0].reset();
+                } else if (status == "Error") {
+                  $('#form-output-global').html('<p class="snackbars-left"><span class="icon icon-xs fa-warning text-middle"></span><span>Error: Try again</span></p>');
+                  $('#form-output-global').addClass("active");
+                }
+                setTimeout(function () {
+                  $('#form-output-global').removeClass("active");
+                  $('#form-output-global').removeClass('success');
+                }, 5000);
+              },
+              error: function (responseData, textStatus, errorThrown) {
+                console.log(responseData);
+              }
+            });
+
+          });
+
+          // RDA INDEX DATA
+          $.ajax(
+          {
+            url: "https://service.rdaindex.com/compiledrdaindex",
+            success: function (result) {
+
+              // set values in header ribbon
+              var rdaValues = getRdaValues(result);
+              $('#topRatedScore').html(rdaValues.rda10Index);
+              $('#headerMarketCapTot').html(rdaValues.rda10MarketCap);
+              $('#topRatedAsset').html(rdaValues.topRdaWithIndex);
+            },
+          });
+      });
+    </script>
+    <script src="js/angular/myangular/waves-lite-client-mainnet-0.5.1.js"></script>
+    <script src="js/angular/myangular/login.js"></script>
+  </body>
+
+</html>

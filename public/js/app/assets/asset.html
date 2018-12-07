@@ -1,0 +1,187 @@
+<div ng-controller="AssetCtrl">
+  <div class="row">
+
+    <div class="col-md-9 offset-md-3 npl">
+      <div class="account-breadcrumb">
+        Account > My Assets
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div id="dashboard-nav">
+        <ul class="navigation">
+          <h4>USER MENU</h4>
+          <li><a href="#">Dashboard</a></li>
+          <li><a ng-href="#!profile">Profile</a></li>
+          <li><a ng-href="#!assets" class="active">My Assets</a></li>
+          <li><a ng-href="#!marketplace">The Marketplace</a></li>
+          <li><a ng-href="#!subscriptions">Subscriptions</a></li>
+          <li><a ng-href="#!transactions">Transactions</a></li>
+        </ul>
+
+        <ul class="navigation">
+          <h4>SUBSCRIPTIONS</h4>
+          <li><a href="#">RDAi 10</a></li>
+          <li><a href="#">RDAi 20</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-md-9" id="main-content">
+      <div id="page-header" class="animated fadeIn animated-delay1">
+        My Assets <span class="pull-right"><small>Asset value: £48,290.00</small></span>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="asset-box animated fadeIn animated-delay1 ">
+            <div class="row">
+              <div class="col-md-2">
+                <img src="../images/cryptos/bitcoin.png">
+              </div>
+              <div class="col-md-10">
+                <h4 class="nmb">
+                  Bitcoin
+                  <a href="#" ng-click="$event.preventDefault(); showBuyModal()"><i class="flaticon-coins sml pull-right"></i></a>
+                  <a href="#" ng-click="$event.preventDefault(); openCart()"><i class="flaticon-cart pull-right"></i></a>
+                </h4>
+                <p><small>3PCgLmPfyZJDy7ev1S5JcyYjN42m9bVfts3</small></p>
+              </div>
+              <div class="col-md-12 scores">
+                <div class="row">
+                  <div class="col-md-5"> <strong>QTY:</strong> 20.56687 </div>
+                  <div class="col-md-4"> <strong>£</strong>45,000 </div>
+                  <div class="col-md-3"> <strong>RDA:</strong> 0.85 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="asset-box animated fadeIn animated-delay2 ">
+            <div class="row">
+              <div class="col-md-2">
+                <img src="../images/cryptos/dash.png">
+              </div>
+              <div class="col-md-10">
+                <h4 class="nmb">
+                  Dash
+                  <a href="#" ng-click="$event.preventDefault(); showBuyModal()"><i class="flaticon-coins sml pull-right"></i></a>
+
+                  <a href="#" ng-click="$event.preventDefault(); openCart()"><i class="flaticon-cart pull-right"></i></a>
+                </h4>
+                <p><small>3PCgLmPfyZJDy7ev1S5JcyYjN42m9bVfts3</small></p>
+              </div>
+              <div class="col-md-12 scores">
+                <div class="row">
+                  <div class="col-md-5"> <strong>QTY:</strong> 1975.00001 </div>
+                  <div class="col-md-4"> <strong>£</strong>3,290 </div>
+                  <div class="col-md-3"> <strong>RDA:</strong> 0.42 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="asset-box animated fadeIn animated-delay3 ">
+            <div class="row">
+              <div class="col-md-2">
+                <img src="../images/cryptos/litecoin.png">
+              </div>
+              <div class="col-md-10">
+                <h4 class="nmb">
+                  LiteCoin
+                  <a href="#" ng-click="$event.preventDefault(); showBuyModal()"><i class="flaticon-coins sml pull-right"></i></a>
+
+                  <a href="#" ng-click="$event.preventDefault(); openCart()"><i class="flaticon-cart pull-right"></i></a>
+                </h4>
+                <p><small>3PCgLmPfyZJDy7ev1S5JcyYjN42m9bVfts3</small></p>
+              </div>
+              <div class="col-md-12 scores">
+                <div class="row">
+                  <div class="col-md-5"> <strong>QTY:</strong> 20.56687 </div>
+                  <div class="col-md-4"> <strong>£</strong>45,000 </div>
+                  <div class="col-md-3"> <strong>RDA:</strong> 0.85 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="asset-box animated fadeIn animated-delay4 ">
+            <div class="row">
+              <div class="col-md-2">
+                <img src="../images/cryptos/ethereum.png">
+              </div>
+              <div class="col-md-10">
+                <h4 class="nmb">
+                  Ethereum
+                  <a href="#" ng-click="$event.preventDefault(); showBuyModal()"><i class="flaticon-coins sml pull-right"></i></a>
+
+                  <a href="#" ng-click="$event.preventDefault(); openCart()"><i class="flaticon-cart pull-right"></i></a>
+                </h4>
+                <p><small>3PCgLmPfyZJDy7ev1S5JcyYjN42m9bVfts3</small></p>
+              </div>
+              <div class="col-md-12 scores">
+                <div class="row">
+                  <div class="col-md-5"> <strong>QTY:</strong> 1975.00001 </div>
+                  <div class="col-md-4"> <strong>£</strong>3,290 </div>
+                  <div class="col-md-3"> <strong>RDA:</strong> 0.42 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="asset-box animated fadeIn animated-delay5">
+            <div class="row">
+              <div class="col-md-2">
+                <img src="../images/cryptos/ripple.png">
+              </div>
+              <div class="col-md-10">
+                <h4 class="nmb">
+                  Ripple
+                  <a href="#" ng-click="$event.preventDefault(); showBuyModal()"><i class="flaticon-coins sml pull-right"></i></a>
+
+                  <a href="#" ng-click="$event.preventDefault(); openCart()"><i class="flaticon-cart pull-right"></i></a>
+                </h4>
+                <p><small>3PCgLmPfyZJDy7ev1S5JcyYjN42m9bVfts3</small></p>
+              </div>
+              <div class="col-md-12 scores">
+                <div class="row">
+                  <div class="col-md-5"> <strong>QTY:</strong> 1975.00001 </div>
+                  <div class="col-md-4"> <strong>£</strong>3,290 </div>
+                  <div class="col-md-3"> <strong>RDA:</strong> 0.42 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="asset-box animated fadeIn animated-delay6">
+            <div class="row">
+              <div class="col-md-2">
+                <img src="../images/cryptos/zcash.png">
+              </div>
+              <div class="col-md-10">
+                <h4 class="nmb">
+                  Zcash
+                  <a href="#" ng-click="$event.preventDefault(); showBuyModal()"><i class="flaticon-coins sml pull-right"></i></a>
+
+                  <a href="#" ng-click="$event.preventDefault(); openCart()"><i class="flaticon-cart pull-right"></i></a>
+                </h4>
+                <p><small>3PCgLmPfyZJDy7ev1S5JcyYjN42m9bVfts3</small></p>
+              </div>
+              <div class="col-md-12 scores">
+                <div class="row">
+                  <div class="col-md-5"> <strong>QTY:</strong> 20.56687 </div>
+                  <div class="col-md-4"> <strong>£</strong>45,000 </div>
+                  <div class="col-md-3"> <strong>RDA:</strong> 0.85 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

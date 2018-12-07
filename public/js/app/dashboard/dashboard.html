@@ -1,0 +1,193 @@
+<div ng-controller="DashboardCtrl">
+  <div class="row">
+    <div class="col-md-9 offset-md-3 npl">
+      <div class="account-breadcrumb">
+        Account > Dashboard
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div id="dashboard-nav">
+        <ul class="navigation">
+          <h4>USER MENU</h4>
+          <li><a href="#" class="active">Dashboard</a></li>
+          <li><a ng-href="#!profile">Profile</a></li>
+          <li><a ng-href="#!assets">My Assets</a></li>
+          <li><a ng-href="#!marketplace">The Marketplace</a></li>
+          <li><a ng-href="#!subscriptions">Subscriptions</a></li>
+          <li><a ng-href="#!transactions">Transactions</a></li>
+        </ul>
+
+        <ul class="navigation">
+          <h4>SUBSCRIPTIONS</h4>
+          <li><a href="#">RDAi 10</a></li>
+          <li><a href="#">RDAi 20</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-9" id="main-content">
+      <div id="page-header" class="animated fadeIn animated-delay1">
+        Dashboard
+      </div>
+
+      <!-- div class="row">
+        <div class="col-md-6">
+            <div class="info-box-blue animated fadeIn animated-delay2">
+              <p class="nmb"> TOKEN BALANCE </p>
+              <span class="t-balance">{{ data.balance }}</span><br/>
+              <p class="nmb"> VALUE: £250,500 </p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="info-box-yellow animated fadeIn animated-delay3">
+              <p class="nmb"> PUBLIC ADDESS </p>
+              <div class="p-address">{{ data.publicAddress }}</div>
+            </div>
+        </div>
+      </div-->
+
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="valued-assets">
+            <h6><i class="flaticon-coins smr"></i> MOST VALUED ASSETS</h6>
+            <div class="row">
+
+
+              <div class="col-md-4">
+                <div class="asset-box">
+                  <div class="row">
+                    <div class="col-md-4 col-sm-2">
+                      <img src="../images/cryptos/bitcoin.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-8 col-sm-10 npl">
+                      <h4 class="nmb"> Bitcoin </h4>
+                      <small><strong>QTY:</strong> 20.56687</small>
+                    </div>
+                    <div class="col-md-12 smt">
+                      <div class="row">
+                        <div class="col-md-7"> <strong>VALUE</strong> £45,000 </div>
+                        <div class="col-md-5"> <strong>RDA:</strong> 0.85 </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="asset-box">
+                  <div class="row">
+                    <div class="col-md-4 col-sm-2">
+                      <img src="../images/cryptos/ethereum.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-8 col-sm-10 npl">
+                      <h4 class="nmb"> Ethereum </h4>
+                      <small><strong>QTY:</strong> 1975.00001</small>
+                    </div>
+                    <div class="col-md-12 smt">
+                      <div class="row">
+                        <div class="col-md-7"> <strong>VALUE</strong> £3,290 </div>
+                        <div class="col-md-5"> <strong>RDA:</strong> 0.42 </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="asset-box">
+                  <div class="row">
+                    <div class="col-md-4 col-sm-2">
+                      <img src="../images/cryptos/litecoin.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-8 col-sm-10 npl">
+                      <h4 class="nmb"> litecoin </h4>
+                      <small><strong>QTY:</strong> 20.56687</small>
+                    </div>
+                    <div class="col-md-12 smt">
+                      <div class="row">
+                        <div class="col-md-7"> <strong>VALUE</strong> £2,090 </div>
+                        <div class="col-md-5"> <strong>RDA:</strong> 0.31 </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div id="recent-transactions" class="animated animated-delay4">
+            <h6><i class="flaticon-list smr"></i> RECENT ACTIVITIES</h6>
+              <table class="table mmt" id="recent-activity">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>TRANSACTION #</th>
+                    <th>ACTIVITY</th>
+                    <th>AMOUNT</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody class="txlist">
+                  <tr>
+                    <td> <i class="flaticon-cart x3 text-success"></i> </td>
+                    <td>
+                      RDAT3829372 <br/>
+                      <small>08 Nov 18, 15:20</small>
+                    </td>
+                    <td>
+                      TRADE <br/>
+                      <small>DASH</small>
+                    </td>
+                    <td>
+                      850 TOKENS <br/>
+                      <small>£1,000.00</small>
+                    </td>
+                    <td> <a href="javascript::void()" class="btn-detail-link"><i class="flaticon-more-v3 x2"></i></a> </td>
+                  </tr>
+                  <tr>
+                    <td> <i class="la la-random text-primary x3"></i> </td>
+                    <td>
+                      RDAT3829372 <br/>
+                      <small>06 Nov 18, 09:47</small>
+                    </td>
+                    <td>
+                      TRANSFER <br/>
+                      <small>ETHERIUM</small>
+                    </td>
+                    <td>
+                      325 TOKENS <br/>
+                      <small>£500.00</small>
+                    </td>
+                    <td> <a href="javascript::void()" class="btn-detail-link"><i class="flaticon-more-v3 x2"></i></a> </td>
+                  </tr>
+                  <tr>
+                    <td> <i class="la la-gg text-orange x3"></i> </td>
+                    <td>
+                      RDAT3829372 <br/>
+                      <small>06 Nov 18, 09:47</small>
+                    </td>
+                    <td>
+                      SERVICE <br/>
+                      <small>RDA</small>
+                    </td>
+                    <td>
+                      200 TOKENS <br/>
+                      <small>£100.00</small>
+                    </td>
+                    <td> <a href="javascript::void()" class="btn-detail-link"><i class="flaticon-more-v3 x2"></i></a> </td>
+                  </tr>
+                </tbody>
+              </table>
+            <p class="nmb"><small><a ng-href="#!transactions">VIEW ALL TRANSACTIONS</a></small></p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>:: Real Digital Asset Index ::</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/helpers.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.css">
+  </head>
+
+  <body>
+    <div class="se-pre-con"></div>
+    <div class="page-content">
+      <div class="top-bar fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="/"><img src="images/RDAi_logo_small.png" class="logo"></a>
+
+          <a class="btn btn-warning btn-sm pull-right sml account animated fadeInRight animated-delay4" href="signin.html">SIGN IN</a>
+          <a class="btn bg-dark-blue btn-sm pull-right account animated fadeInRight animated-delay3" href="register.html">REGISTER</a>
+
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue">
+          <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav">
+
+
+                <li class="rda-item">
+                  <div id="top-rated-asset" class="pull-right animated fadeInRight animated-delay6"><strong>RDA #1:</strong> <span id="topRatedAsset"></span></div>
+                </li>
+                <li class="rda-item">
+                  <div id="top-rated-asset" class="pull-right animated fadeInRight animated-delay6"><strong>RDA 10 INDEX LEVEL:</strong> <span id="topRatedScore"></span></div>
+                </li>
+
+
+                <li class="nav-item">
+                  <a class="nav-link animated fadeInDown" href="what-is-rda.html">What is RDA Index</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link animated fadeInDown animated-delay2" href="about-us.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link animated fadeInDown  animated-delay3" href="faqs.html">FAQ's</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link animated fadeInDown  animated-delay4" href="rda-token.html">RDAi Token</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link animated fadeInDown  animated-delay5" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+
+      <header>
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <!-- Slide One - Set the background image for this slide in the line below -->
+            <div class="carousel-item active" style="background-image: url('images/slides/spikes.jpg')">
+              <div class="carousel-caption">
+                <h3>Clarifying</h3>
+                <h1>Investable</h1>
+                <h4>Cryptocurrencies</h4>
+              </div>
+            </div>
+            <!--
+            <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+
+            <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+          -->
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </header>
+
+
+
+
+
+      <div class="container">
+        <div id="partners">
+          <h1 class=""> OUR TRUSTED PARTNERS </h1>
+          <div class="row">
+            <div class="col-sm-12">
+
+              <ul class="list-inline" id="partners-list">
+                <li> <img src="images/partners/reuters.png" alt="reuters" class="img-responsive animated fadeIn animated-delay2"> </li>
+                <li> <img src="images/partners/pure-kernel.png" alt="pure kernel" class="img-responsive animated fadeIn animated-delay3"> </li>
+                <li> <img src="images/partners/coinbase.png" alt="coinbase" class="img-responsive animated fadeIn animated-delay4"> </li>
+                <li> <img src="images/partners/obsnetwork.png" alt="Slide11" class="img-responsive animated fadeIn animated-delay5"> </li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <section class="">
+        <div class="container nmt">
+          <div class="row">
+            <div class="col-lg-3 offset-lg-1">
+              <img class="img-fluid rounded animated fadeInUp" src="images/about-us.png" alt="">
+            </div>
+            <div class="col-lg-7">
+              <div id="why-rda" class="">
+                <h4 class="animated fade-in animate-hide animated-delay2">Why RDAi?</h4>
+                <p class="home-intro-text animated fade-in animate-hide animated-delay2">
+                  In a complex cryptocurrency market with literally thousands of instruments, Real Digital Asset Index (RDAi) clarifies which cryptocurrencies are a reliable store of value. Based on a multi-factor analysis, RDAi evaluates, scores and ranks cryptocurrencies in order of investability.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="bg-blue">
+        <div class="container mmt">
+          <div class="row">
+
+            <div class="col-md-5 offset-md-1">
+              <a href="javascript::void()"class="video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/_SztpNV6Fmw" data-target="#videoModal">
+                <img class="img-fluid rounded animated fade-in mpt" src="images/video-placeholder.jpg" alt="">
+              </a>
+            </div>
+
+            <div class="col-md-6 xlpl">
+              <div id="why-rda">
+                <h4 class="animated fade-in animate-hide animated-delay2 text-yellow fw300"> Unique Ranking System </h4>
+                <p class="home-intro-text animated fade-in animate-hide animated-delay2">
+                  In a complex cryptocurrency market with literally thousands of instruments, Real Digital Asset Index (RDAi) clarifies which cryptocurrencies are a reliable store of value.
+                </p>
+                <p class="home-intro-text animated fade-in animate-hide animated-delay2">
+                  In a complex cryptocurrency market with literally thousands of instruments, Real Digital Asset Index (RDAi) clarifies.  Based on a multi-factor analysis, RDAi evaluates, scores and ranks cryptocurrencies.
+                </p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+
+      <section class="border-bottom">
+        <div class="container mmt">
+          <div class="row">
+
+
+            <div class="offset-md-1 col-lg-5">
+              <div id="why-rda">
+                <h4 class="animated fade-in animate-hide"> RDAi 10, 50 &amp; 100 </h4>
+                <p class="home-intro-text animated fade-in animate-hide animated-delay2">
+                  In a complex cryptocurrency market with literally thousands of instruments, Real Digital Asset Index (RDAi) clarifies which cryptocurrencies are a reliable store of value.
+                </p>
+                <p class="home-intro-text animated fade-in animate-hide animated-delay3">
+                  Based on a multi-factor analysis, RDAi evaluates, scores and ranks cryptocurrencies in order of investability.
+                  In a complex cryptocurrency market with literally thousands of instruments, Real Digital Asset Index (RDAi) clarifies.
+                </p>
+                <a class="btn btn-primary  animated fade-in animate-hide animated-delay4" href="">VIEW TOP 3</a>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <img class="img-fluid rounded img-responsive  animated fade-in animate-hide animated-delay4" src="images/rdai_10.png" alt="">
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+       <section class="border-bottom bg-yellow section-parallax" style="background-image:url(images/parallax/blockchain.png)">
+        <div class="container mmt">
+          <div class="row">
+
+            <div class="offset-md-1 col-md-6">
+              <img class="img-fluid rounded img-responsive  animated fade-in animate-hide animated-delay4" src="" alt="">
+            </div>
+
+            <div class="col-md-5">
+              <div id="why-rda">
+                <h4 class="animated fade-in animate-hide"> Weighted Attributes & Magic Quadrant </h4>
+                <p class="home-intro-text animated fade-in animate-hide animated-delay2">
+                  In a complex cryptocurrency market with literally thousands of instruments, Real Digital Asset Index (RDAi) clarifies which cryptocurrencies are a reliable store of value.
+                </p>
+                <p class="home-intro-text animated fade-in animate-hide animated-delay3">
+                  Based on a multi-factor analysis, RDAi evaluates, scores and ranks cryptocurrencies in order of investability.
+                  In a complex cryptocurrency market with literally thousands of instruments, Real Digital Asset Index (RDAi) clarifies.
+                </p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+
+
+      <section id="news" class="mpt">
+        <div class="container xlmt xlmb">
+          <div class="row">
+            <div class="col-md-12">
+              <h4 class="text-center  animated fade-in animate-hide"> RDAi News </h4>
+              <p class="home-intro-text text-center fs-14 lmb nmt  animated fade-in animate-hide">Keep upto date with the latest RDA news and events</p>
+            </div>
+            <div class="col-sm-6 col-md-4 news-item">
+              <div class="news-date">1 Aug 18</div>
+              <a href="">
+                <img class="img-fluid" src="images/news/cryptocurrency.jpg" alt="">
+              </a>
+              <p class="animated fade-in animate-hide animated-delay1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <a class="btn btn-news offset-md-4 animated fade-in animate-hide animated-delay1">Read more</a>
+            </div>
+            <div class="col-sm-6 col-md-4 news-item">
+              <div class="news-date">3 Sep 18</div>
+              <a href="">
+                <img class="img-fluid" src="images/news/typography.jpg" alt="">
+              </a>
+              <p class="animated fade-in animate-hide animated-delay2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <a class="btn btn-news offset-md-4 animated fade-in animate-hide animated-delay2">Read more</a>
+            </div>
+            <div class="col-sm-6 col-md-4 news-item">
+              <div class="news-date">2 Oct 18</div>
+              <a href="">
+                <img class="img-fluid" src="images/news/bitcoin.jpg" alt="">
+              </a>
+              <p class="animated fade-in animate-hide animated-delay3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <a class="btn btn-news offset-md-4 animated fade-in animate-hide animated-delay3">Read more</a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      <section id="newsletter" class="spt mpb">
+        <div class="container lmt xlmb">
+
+
+          <form id='subscribe-form' data-form-output="form-output-global" data-form-type="subscribe" method="post" class="rd-mailform form-classic">
+            <div class="row">
+              <div class="col-md-12">
+                <h5 class="text-center nmb animated fade-in animate-hide"> NEWSLETTER </h5>
+                <p class="home-intro-text text-center text-white fs-14 smb nmt animated fade-in animate-hide animated-delay2">Keep up to date with the latest RDA news and events</p>
+              </div>
+              <div class="col-sm-6 col-md-4 offset-md-1 animated fade-in animate-hide animated-delay3">
+                <input id="subscribe-Name" type="text" name="name" class="form-control" placeholder="Name" required>
+              </div>
+              <div class="col-sm-6 col-md-4 animated fade-in animate-hide animated-delay4">
+                <input id="subscribe-email" type="email" name="email" data-constraints="@Email @Required" class="form-control" placeholder="Email" required>
+              </div>
+              <div class="col-sm-6 col-md-2 animated fade-in animate-hide animated-delay5">
+                <button class="btn btn-newsletter-submit"> SIGN UP </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+
+    </div>
+
+    <footer class="xlpt">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <h4 class="footer-menu-header">RDA INDEX</h4>
+            <p>RDA Index does not accept any form of compensation from creators, issuers or sponsors of cryptocurrencies. Nor are the RDA Index rankings intended to endorse or promote an investment in any specific cryptocurrency. Cryptocurrencies carry a high degree of risk. The UK Financial Conduct Authority and other regulators have expressed concerns with the volatility of the market and the actions of sponsors of specific cryptocurrencies. So be sure to review their official consumer alerts such as the public statement on cryptocurrencies by the Financial Conduct Authority. </p>
+            <p>
+              <ul class="list-inline mmt nmb">
+                <li> <a class="smedia animated fade-in animate-hide animated-delay1" target="new" href="https://www.linkedin.com/company/rda-index"><i class="fab fa-linkedin"></i></a> </li>
+                <li> <a class="smedia animated fade-in animate-hide animated-delay2" target="new" href="https://twitter.com/rdaindex"><i class="fab fa-twitter"></i></a> </li>
+                <li> <a class="smedia animated fade-in animate-hide animated-delay3" target="new" href="https://t.me/rdaindex"><i class="fab fa-telegram"></i></a> </li>
+                <li> <a class="smedia  animated fade-in animate-hide animated-delay4" target="new" href="https://www.youtube.com/channel/UC1hBmo82FAHv1vGDwRUnfBw?view_as=subscriber"><i class="fab fa-youtube"></i></a> </li>
+              </ul>
+            </p>
+          </div>
+
+          <div class="col-md-2 offset-md-1">
+            <ul class="footer-menu">
+              <li class="footer-menu-header">COMPANY</li>
+              <li> <a href=""> RDA Index</a></li>
+              <li> <a href=""> About Us</a></li>
+              <li> <a href=""> FAQ’s</a></li>
+              <li> <a href=""> News & Events</a></li>
+              <li> <a href=""> Terms & Conditions</a></li>
+              <li> <a href=""> Privacy & Cookies</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <ul class="footer-menu">
+              <li class="footer-menu-header">DIGITAL ASSETS</li>
+              <li> <a href=""> RDA Index</a></li>
+              <li> <a href=""> About Us</a></li>
+              <li> <a href=""> FAQ’s</a></li>
+              <li> <a href=""> News & Events</a></li>
+              <li> <a href=""> Terms & Conditions</a></li>
+              <li> <a href=""> Privacy & Cookies</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <ul class="footer-menu">
+              <li class="footer-menu-header">RESOURCES</li>
+              <li> <a href=""> RDA Index</a></li>
+              <li> <a href=""> About Us</a></li>
+              <li> <a href=""> FAQ’s</a></li>
+              <li> <a href=""> News & Events</a></li>
+              <li> <a href=""> Terms & Conditions</a></li>
+              <li> <a href=""> Privacy & Cookies</a></li>
+            </ul>
+          </div>
+          <div class="col-md-10">
+                <p class="copyright">
+                  © 2018 all rights reserved. RDA Index is owned and maintained by Xtant Real. A company registered in England and Wales 11291734.
+                </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+<!-- Modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+
+
+      <div class="modal-body">
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <!-- 16:9 aspect ratio -->
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always">></iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animate.js"></script>
+    <script src="js/rda.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.js"></script>
+
+    <script type="text/javascript">
+
+      $(document).ready(function() {
+
+          // VIDEO MODAL
+          var $videoSrc;
+          $('.video-btn').click(function() {
+              $videoSrc = $(this).data( "src" );
+          });
+          console.log($videoSrc);
+
+          $('#myModal').on('shown.bs.modal', function (e) {
+            $("#video").attr('src',$videoSrc + "?rel=0&amp;showinfo=0&amp;modestbranding=1&amp;autoplay=1" );
+          })
+
+          $('#myModal').on('hide.bs.modal', function (e) {
+              $("#video").attr('src',$videoSrc);
+          })
+
+
+
+          // NEWSLETTER SUBSCRIPTION
+          $('#subscribe-form').submit(function (e) {
+            e.preventDefault();
+            var email = $('input[name=email]').val();
+            var name = $('input[name=name]').val();
+
+            var userData = { "email": email,"name": name };
+            console.log(userData);
+            $('#form-output-global').html('<p><span class="icon text-middle fa fa-circle-o-notch fa-spin icon-xs"></span><span>Sending</span></p>');
+            $('#form-output-global').addClass("active");
+
+            $.ajax({
+              type: 'POST',
+              // url: 'https://service.rdaindex.com/mail-subscription',
+              url: 'https://service.rdaindex.com/subscribe',
+
+              crossDomain: true,
+              data: JSON.stringify(userData),
+              dataType: 'json',
+              success: function (responseData, textStatus, jqXHR) {
+                console.log(JSON.stringify(responseData));
+                var status = responseData.status;
+                if (status == 'Failed')
+                {
+                  $.alert({
+                      title: 'Attention',
+                      content: responseData.message,
+                      type: 'orange',
+                      icon: 'fa fa-exclamation-circle',
+                  });
+                }
+                else if (status == "SubscriptionSuccessful")
+                {
+                  $.alert({
+                      title: 'Congratulations!',
+                      content: 'You have Successfully subscribed to our newsletter.',
+                      type: 'green',
+                      icon: 'fa fa-check',
+                      containerFluid: true,
+                  });
+                  $('#subscribe-form')[0].reset();
+                }
+                else
+                {
+                  $.alert({
+                      title: 'Error!',
+                      content: 'An unexpected error has occured, please try again.',
+                      type: 'red',
+                      icon: 'fa fa-exclamation',
+                      containerFluid: true,
+                  });
+                }
+                setTimeout(function ()
+                {
+                  $('#form-output-global').removeClass("active");
+                  $('#form-output-global').removeClass("error");
+                  $('#form-output-global').removeClass('success');
+                }, 5000);
+
+                console.log('textStatus: ' + textStatus);
+                console.log('jqXHR: ' + jqXHR);
+              },
+              error: function (responseData, textStatus, errorThrown)
+              {
+                $('#form-output-global').removeClass("active");
+                console.log("in error");
+                console.log(responseData);
+
+              }
+            });
+
+          });
+
+
+          // RDA INDEX DATA
+
+          $.ajax(
+            {
+              url: "https://service.rdaindex.com/compiledrdaindex",
+              success: function (result) {
+
+                /*
+                var assetId, assetName, marketCap, index, prevHrIndex, prev24HrIndex;
+                var imgUrl, imgHtml, assetLink;
+                var changeHr, changeHrPerc, changeHrTxt, changeHrTot = 0, changeHrTotPerc;
+                var change24Hr, change24HrPerc, change24HrTxt, change24HrTot = 0, change24HrTotPerc;
+                var indicesTot = 0, marketCapTot = 0;
+
+                var i = 0;
+                var dp = 4; //decimal places
+                var dp2 = 2; //decimal places
+
+                var plusSign, className, topAsset, topAssetIndex;
+
+                var txt = "<table class='table table-primary table-striped table-condensed' id='ranking-chart'>";
+                txt += "<thead> <tr><th> Rank </th> <th> Cryptocurrency </th> <th> RDA Score </th> <th> 1hr Change </th> </tr></thead><tbody>";
+                $.each(result, function () {
+                  i++;
+                  assetId = this.asset_id;
+                  imgUrl = "https://rdaindex.com/images/logos/" + assetId + ".png";
+                  imgHtml = "<img src='" + imgUrl + "'/> &nbsp;";
+
+                  assetName = this.asset_name;
+
+                  marketCap = this.market_cap;
+                  index = parseFloat(this.index_value);
+                  indicesTot += index;
+
+                  prevHrIndex = parseFloat(this.prev_hr_index_value);
+                  prev24HrIndex = parseFloat(this.prev_24hr_index_value);
+                  changeHr = index - prevHrIndex;
+                  change24Hr = index - prev24HrIndex;
+                  changeHrTot += changeHr;
+                  change24HrTot += change24Hr;
+
+                  changeHrPerc = index > 0 ? ((changeHr / index) * 100).toFixed(dp2) : 0.00;
+                  change24HrPerc = index > 0 ? ((change24Hr / index) * 100).toFixed(dp2) : 0.00;
+
+                  changeHr = (Math.round(changeHr * 100) / 100).toFixed(dp2);
+                  change24Hr = (Math.round(change24Hr * 100) / 100).toFixed(dp2);
+
+                  assetLink = 'asset.html?asset_id=' + assetId;
+
+                  txt += "<tr>";
+                  txt += "<td>" + i + "</td>";
+                  txt += "<td><a href = '" + assetLink + "' class='' >" + imgHtml + assetName + "</a></td>";
+                  txt += "<td>" + index.toFixed(dp) + "</td>";
+                  txt += getChangeTxt(changeHr, changeHrPerc, true);
+                  //txt += getChangeTxt(change24Hr, change24HrPerc, true);
+                  txt += "</tr>";
+                });
+
+
+                // table footer
+                changeHrTotPerc = ((changeHrTot / indicesTot) * 100).toFixed(dp2);
+
+                txt += "</tbody><tfoot><tr> <td colspan='2'> &nbsp;&nbsp;&nbsp;RDA Index Level </td> ";
+                txt += "<td>" + indicesTot.toFixed(dp) + "</td>";
+                txt += getChangeTxt(changeHrTot, changeHrTotPerc, true);
+                change24HrTotPerc = ((change24HrTot / indicesTot) * 100).toFixed(dp2);
+
+                //txt += getChangeTxt(change24HrTot, change24HrTotPerc, true);
+
+                txt += "</tr>";
+                // txt += "<tr><td colspan='5' class='text-center'>";
+                // txt += "<a href='rda.html' class='btn btn-primary btn-block'>VIEW RDA SCORE DETAILS</a>
+                // txt += "</td></tr>";
+                txt += " </tfoot></table>";
+                $('#data').html(txt);
+                */
+
+                // set values in header ribbon
+                var rdaValues = getRdaValues(result);
+                $('#topRatedScore').html(rdaValues.rda10Index);
+                $('#headerMarketCapTot').html(rdaValues.rda10MarketCap);
+                $('#topRatedAsset').html(rdaValues.topRdaWithIndex);
+              },
+            });
+
+      });
+
+    </script>
+
+  </body>
+
+</html>

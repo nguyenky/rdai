@@ -2,29 +2,69 @@
 
 namespace App;
 
-use Illuminate\Notifications\Notifiable;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-
-class User extends Authenticatable
+use Eloquent as Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Auth\Authenticatable;
+use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
+/**
+ * Class User
+ * @package App\Models
+ * @version December 6, 2018, 8:52 am UTC
+ *
+ * @property string email
+ * @property string password
+ * @property string cipher
+ * @property string checksum
+ * @property string publicKey
+ * @property string address
+ */
+class User extends Model implements AuthenticatableContract
 {
-    use Notifiable;
+    use SoftDeletes;
+    use Authenticatable;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
-    protected $fillable = [
-        'name', 'email', 'password',
+    public $table = 'users';
+    
+
+    protected $dates = ['deleted_at'];
+
+
+    public $fillable = [
+        'email',
+        'password',
+        'cipher',
+        'checksum',
+        'publicKey',
+        'address'
     ];
 
     /**
-     * The attributes that should be hidden for arrays.
+     * The attributes that should be casted to native types.
      *
      * @var array
      */
-    protected $hidden = [
-        'password', 'remember_token',
+    protected $casts = [
+        'email' => 'string',
+        'password' => 'string',
+        'cipher' => 'string',
+        'checksum' => 'string',
+        'publicKey' => 'string',
+        'address' => 'string'
     ];
+
+    /**
+     * Validation rules
+     *
+     * @var array
+     */
+    public static $rules = [
+        'email' => 'required',
+        'password' => 'required',
+        'cipher' => 'required',
+        'checksum' => 'required',
+        'publicKey' => 'required',
+        'address' => 'required'
+    ];
+
+    
 }

@@ -1,0 +1,226 @@
+<div class="row" ng-controller="MarketplaceCtrl">
+  <div class="col-md-9 offset-md-3 npl">
+    <div class="account-breadcrumb">
+      Account > The Marketplace
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div id="dashboard-nav">
+      <ul class="navigation">
+        <h4>USER MENU</h4>
+          <li><a href="#">Dashboard</a></li>
+          <li><a ng-href="#!profile">Profile</a></li>
+          <li><a ng-href="#!assets">My Assets</a></li>
+          <li><a ng-href="#!marketplace" class="active">The Marketplace</a></li>
+          <li><a ng-href="#!subscriptions">Subscriptions</a></li>
+          <li><a ng-href="#!transactions">Transactions</a></li>
+      </ul>
+
+      <ul class="navigation">
+        <h4>SUBSCRIPTIONS</h4>
+        <li><a href="#">RDAi 10</a></li>
+        <li><a href="details.html">RDAi 20</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-9" id="main-content">
+    <div id="page-header">
+      The Marketplace
+    </div>
+
+    <div class="row">
+      <div class="col-md-7">
+
+
+
+          <div class="crypto-box">
+            <ul id="cryptolist" class="nav nav-tabs">
+                <li class="nav-item">
+                  <a href="" data-target="#all" data-toggle="tab" class="nav-link active"><h5>All</h5></a>
+                </li>
+                <li class="nav-item">
+                  <a href="" data-target="#rdai" data-toggle="tab" class="nav-link"><h5>RDAi</h5></a>
+                </li>
+                <li class="nav-item">
+                  <a href="" data-target="#sterling" data-toggle="tab" class="nav-link"><h5>£</h5></a>
+                </li>
+                <li class="nav-item">
+                  <a href="" data-target="#btc" data-toggle="tab" class="nav-link"><h5>BTC</h5></a>
+                </li>
+            </ul>
+            <div class="row">
+              <div class="col-md-12">
+                <div id="search-container">
+                  <form>
+                    <input class="form-control col-md-6">
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div id="cryptolist-container" class="tab-content">
+                <div id="all" class="tab-pane fade active show pairs">
+
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="headers">
+                          <div class="row">
+
+                              <div class="col-md-1">
+                                <i class="la la-star-o"></i>
+                              </div>
+                              <div class="col-md-4">
+                                <strong>PAIR</strong>
+                              </div>
+                              <div class="col-md-2">
+                                <strong>PRICE</strong>
+                              </div>
+                              <div class="col-md-2">
+                                <strong>CHANGE</strong>
+                              </div>
+                              <div class="col-md-3">
+                                <strong>VOLUME</strong>
+                              </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div id="rdai" class="tab-pane fade">
+                    rdai cryptos
+                </div>
+                <div id="sterling" class="tab-pane fade">
+                    sterling cryptos
+                </div>
+                <div id="btc" class="tab-pane fade">
+                    btc cryptos
+                </div>
+            </div>
+          </div>
+
+
+          <div class="sales-box">
+            <div class="balance-container">
+              <h5>My Balance</h5>
+              <table class="table nmb">
+                <thead>
+                  <tr>
+                    <th>Asset </th>
+                    <th>Asset ID</th>
+                    <th>Available</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><img src="../images/cryptos/bitcoin.png" width="30"></td>
+                    <td>2sBhrDvaA9MBGGeh9D0VpkihCw=</td>
+                    <td>0.000003</td>
+                  </tr>
+                  <tr>
+                    <td><img src="../images/cryptos/dash.png" width="30"></td>
+                    <td>GRpc3Rpbmd1aXNsIG5vdC=Bvbmx</td>
+                    <td>12k</td>
+                  </tr>
+                  <tr>
+                    <td><img src="../images/cryptos/litecoin.png" width="30"></td>
+                    <td>xlIGdlbmVyYX=Rpb24gb2Yga25vd2x</td>
+                    <td>65</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            </div>
+
+
+          <div class="sales-box">
+            <ul id="buysell" class="nav nav-tabs">
+                <li class="nav-item">
+                  <a href="javascript::void()" data-target="#buy" data-toggle="tab" class="nav-link active buy-tab-link">
+                    <h5>Buy</h5>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="javascript::void()" data-target="#sell" data-toggle="tab" class="nav-link sell-tab-link">
+                    <h5>Sell</h5>
+                  </a>
+                </li>
+            </ul>
+            <div id="buysell-form-container" class="tab-content">
+              <div id="buy" class="tab-pane fade active show">
+                <form id="buy-crypto">
+                  <div class="form-group">
+                    <label for="amount">
+                      Amount
+                      <span id="paired-amount" class="pull-right"> 0 USD </span>
+                    </label>
+                    <input class="form-control" >
+                  </div>
+                  <div class="form-group">
+                    <label for="limit">
+                      Limit Price
+                    </label>
+                    <input class="form-control" >
+                  </div>
+                  <div class="form-group">
+                    <label for="total">
+                      Total
+                    </label>
+                    <input class="form-control" >
+                  </div>
+                  <div class="form-group nmb mmt">
+                    <button class="btn btn-primary btn-sm">PURCHASE <span class="buy-crypto-name"> BTC </span></button>
+                  </div>
+                </form>
+              </div>
+              <div id="sell" class="tab-pane fade">
+                <form id="buy-crypto">
+                  <div class="form-group">
+                    <label for="amount">
+                      Amount
+                      <span id="paired-amount" class="pull-right"> 0 USD </span>
+                    </label>
+                    <input class="form-control" >
+                  </div>
+                  <div class="form-group">
+                    <label for="limit">
+                      Limit Price
+                    </label>
+                    <input class="form-control" >
+                  </div>
+                  <div class="form-group">
+                    <label for="total">
+                      Total
+                    </label>
+                    <input class="form-control" >
+                  </div>
+                  <div class="form-group nmb mmt">
+                    <button class="btn btn-warning btn-sm">SELL <span class="buy-crypto-name"> </span></button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+      </div>
+      <div class="col-md-5">
+
+          <div class="recent-tranactions-box">
+            <h5>Trade History</h5>
+            <table class="table table-hover nmb">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Transaction</th>
+                  <th>Amount</th>
+                </tr>
+              </thead>
+              <tbody id="txList"> </tbody>
+            </table>
+          </div>
+
+      </div>
+    </div><!-- /row -->
+
+  </div>
+</div>

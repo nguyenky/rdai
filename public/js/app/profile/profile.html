@@ -1,0 +1,202 @@
+<div ng-controller="ProfileCtrl">
+  <div class="row">
+
+
+    <div class="col-md-9 offset-md-3 npl">
+      <div class="account-breadcrumb">
+        Account > My Profile
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div id="dashboard-nav">
+        <ul class="navigation">
+          <h4>USER MENU</h4>
+          <li><a href="#">Dashboard</a></li>
+          <li><a ng-href="#!profile" class="active">Profile</a></li>
+          <li><a ng-href="#!assets">My Assets</a></li>
+          <li><a ng-href="#!marketplace">The Marketplace</a></li>
+          <li><a ng-href="#!subscriptions">Subscriptions</a></li>
+          <li><a ng-href="#!transactions">Transactions</a></li>
+        </ul>
+
+        <ul class="navigation">
+          <h4>SUBSCRIPTIONS</h4>
+          <li><a href="#">RDAi 10</a></li>
+          <li><a href="#">RDAi 20</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="col-md-9" id="main-content">
+      <div id="page-header" class="animated fadeIn animated-delay1">
+        User Details
+      </div>
+
+      <form id="user-profile">
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>First Name:</label>
+              <input class="form-control" type="text" name="firstName">
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>Last Name:</label>
+              <input class="form-control" type="text" name="lastName">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>Email:</label>
+              <input class="form-control" type="email" name="email">
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>Username:</label>
+              <input class="form-control">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-md-12">
+            <hr/>
+            <h6 class="mmb lmt">RESET PASSWORD</h6>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>Password:</label>
+              <input class="form-control" type="password" name="password">
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>Confirm Password:</label>
+              <input class="form-control" type="password" name="confirm_password">
+            </div>
+          </div>
+        </div>
+        <div class="row mmt">
+          <label class="col-4 col-form-label">
+            MULTI FACTOR AUTHENTICATION:
+          </label>
+          <div class="col-2">
+            <span class="m-switch m-switch--success">
+              <label>
+                <input type="checkbox" checked="checked" name="">
+                <span></span>
+              </label>
+            </span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <button class="btn btn-primary mmt">Update</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="col-md-9 offset-md-3 xlmt" id="main-content">
+
+      <div id="page-header" class="animated fadeIn animated-delay1">
+        IDENTITY VERIFICATION - KNOW YOUR CUSTOMER (KYC)
+      </div>
+      <form id="kyc">
+        <div class="row">
+          <div class="col-md-12">
+            <p>To comply with anti money laundering regulation each participant will have to go through indentity verification (KYC). Please complete our quick and secure verification process to allow you to buy/sell tokens.</p>
+          </div>
+          <div class="col-md-12">
+            <div class="kyc-step-container">
+              <div class="kyc-step">1</div> <h5>Personal Information</h5>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>DATE OF BIRTH:</label>
+              <input class="form-control" type="password" name="password">
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>NATIONALITY:</label>
+              <input class="form-control" type="password" name="confirm_password">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <h6>ADDRESS</h6>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>HOUSE #/NAME & STREET:</label>
+              <input class="form-control" type="text" name="address1">
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>CITY:</label>
+              <input class="form-control" type="text" name="address2">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>POST/ZIP CODE:</label>
+              <input class="form-control" type="text" name="address1">
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>COUNTRY:</label>
+              <input class="form-control" type="text" name="address2">
+            </div>
+          </div>
+        </div>
+
+        <div class="row mmt">
+          <div class="col-md-12">
+            <div class="kyc-step-container">
+              <div class="kyc-step">2</div> <h5>Indentity</h5>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <p>Please upload any of the following personal documents.</p>
+          </div>
+          <div>
+            <i class="flaticon-profile"></i>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+            <button class="btn btn-primary mmt">Update</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+  </div>
+</div>
+

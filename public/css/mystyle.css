@@ -1,0 +1,8 @@
+.span-seed{
+    margin-right: 10px; 
+    margin-top: 10px;
+    cursor: pointer; 
+}
+.span-seed:hover{
+    background-color: #212d64 !important;
+}
