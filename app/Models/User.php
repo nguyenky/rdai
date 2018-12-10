@@ -33,7 +33,9 @@ class User extends Model
         'cipher',
         'checksum',
         'publicKey',
-        'address'
+        'address',
+        'seed',
+        'name'
     ];
 
     /**
@@ -47,7 +49,9 @@ class User extends Model
         'cipher' => 'string',
         'checksum' => 'string',
         'publicKey' => 'string',
-        'address' => 'string'
+        'address' => 'string',
+        'seed' => 'string',
+        'name' => 'string',
     ];
 
     /**
@@ -61,7 +65,8 @@ class User extends Model
         'cipher' => 'required',
         'checksum' => 'required',
         'publicKey' => 'required',
-        'address' => 'required'
+        'address' => 'required',
+        'seed'=> 'required'
     ];
 
     
