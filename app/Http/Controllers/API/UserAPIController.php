@@ -126,4 +126,12 @@ class UserAPIController extends AppBaseController
 
         return $this->sendResponse($id, 'User deleted successfully');
     }
+    public function validateEmail(Request $request){
+        $input = $request->all();
+        $user = $this->userRepository->findByField('email',$input['email']);
+        if(count($user))
+            return $this->sendError('Email has been alreay !');
+        else
+            return $this->sendResponse([], 'Success !');
+    }
 }

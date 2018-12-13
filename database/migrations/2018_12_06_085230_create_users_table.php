@@ -23,7 +23,6 @@ class CreateUsersTable extends Migration
             $table->string('address');
             $table->string('seed');
             $table->string('name');
-            $table->string('seed');
             $table->timestamps();
             $table->softDeletes();
         });

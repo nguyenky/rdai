@@ -21,4 +21,5 @@ Route::group(['namespace'=>'API'],function(){
 
     Route::resource('users', 'UserAPIController');
     Route::post('login','LoginController@login');
+    Route::post('validateEmail','UserAPIController@validateEmail');
 });

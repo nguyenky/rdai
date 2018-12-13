@@ -60,7 +60,7 @@ class User extends Model
      * @var array
      */
     public static $rules = [
-        'email' => 'required',
+        'email' => 'required|email',
         'password' => 'required',
         'cipher' => 'required',
         'checksum' => 'required',
