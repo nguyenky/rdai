@@ -22,4 +22,6 @@ Route::group(['namespace'=>'API'],function(){
     Route::resource('users', 'UserAPIController');
     Route::post('login','LoginController@login');
     Route::post('validateEmail','UserAPIController@validateEmail');
+    Route::get('test','UserAPIController@test');
+    Route::post('generateHash','UserAPIController@generateHash');
 });

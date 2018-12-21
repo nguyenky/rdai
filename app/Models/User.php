@@ -30,12 +30,13 @@ class User extends Model
     public $fillable = [
         'email',
         'password',
-        'cipher',
-        'checksum',
+        'privateKey',
         'publicKey',
         'address',
         'seed',
-        'name'
+        'name',
+        'cipher',
+        'checksum',
     ];
 
     /**
@@ -46,8 +47,6 @@ class User extends Model
     protected $casts = [
         'email' => 'string',
         'password' => 'string',
-        'cipher' => 'string',
-        'checksum' => 'string',
         'publicKey' => 'string',
         'address' => 'string',
         'seed' => 'string',
@@ -62,8 +61,6 @@ class User extends Model
     public static $rules = [
         'email' => 'required|email',
         'password' => 'required',
-        'cipher' => 'required',
-        'checksum' => 'required',
         'publicKey' => 'required',
         'address' => 'required',
         'seed'=> 'required'

@@ -134,4 +134,15 @@ class UserAPIController extends AppBaseController
         else
             return $this->sendResponse([], 'Success !');
     }
+
+    public function generateHash(Request $request){
+        $input = $request->all();
+        foreach ($input as $k => $v) {
+            $hash = md5($v['address']);
+            $input[$k]['hash'] = $hash;
+            $src = "http://gravatar.com/avatar/${hash}?d=retro";
+            $input[$k]['src'] = $src;
+        }
+        return $this->sendResponse($input, 'Generate hash successfully');
+    }
 }

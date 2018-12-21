@@ -17,9 +17,10 @@ class CreateUsersTable extends Migration
             $table->increments('id');
             $table->string('email');
             $table->string('password');
-            $table->string('cipher');
-            $table->string('checksum');
+            $table->string('privateKey')->nullable();
             $table->string('publicKey');
+            $table->string('checksum');
+            $table->string('cipher');
             $table->string('address');
             $table->string('seed');
             $table->string('name');
